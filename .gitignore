@@ -1,0 +1,39 @@
+# Rust build and backup files
+/target/
+debug/
+Cargo.lock
+**/*.rs.bk
+
+# Mutation testing data
+**/mutants.out*/
+
+# Debug files
+*.pdb
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+*.log
+logs/
+
+# Makefile
+**/Makefile
+
+# .env files
+.env.*
+
+
+# RustRover (JetBrains IDE)
+# For more options, see https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
