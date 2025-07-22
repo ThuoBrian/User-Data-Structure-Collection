@@ -27,8 +27,8 @@ pub fn get_user_option() -> i8 {
         .expect("Fail to read the value");
 
     let entered_value: i8 = match selected_option_value.trim().parse() {
-        Ok(num) => num,
-        Err(_) => {
+        Ok(num) if num > 0 && num < 6 => num,
+        _ => {
             println!("Opps, Please enter a valid option");
             0
         }
